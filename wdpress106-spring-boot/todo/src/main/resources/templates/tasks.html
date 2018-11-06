@@ -64,7 +64,7 @@
         method="POST"
         action="./tasks.html"
         th:unless="${form.isNewTask}"
-        th:action="@{/tasks/{id}(id=${taskId)}">
+        th:action="@{/tasks/{id}(id=${taskId})}">
         <input name="_method" type="hidden" value="PUT">
         <div class="form-row">
           <div class="form-group col-md-8">
