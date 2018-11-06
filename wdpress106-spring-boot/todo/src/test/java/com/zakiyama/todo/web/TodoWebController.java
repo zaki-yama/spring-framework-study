@@ -9,6 +9,8 @@ import com.zakiyama.todo.form.TaskForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -48,5 +50,21 @@ public class TodoWebController {
       formDeadLine,
       hasDone,
       isNewTask);
+  }
+
+  // タスクを1件作成
+  @PostMapping(value = "/tasks")
+  public ModelAndView createOneTask(
+      @ModelAttribute TaskForm form) {
+    createTaskFromForm(form);
+    return new ModelAndView(REDIRECT_TO);
+  }
+
+  private void createTaskFromForm(TaskForm form) {
+    String subject = form.getSubject();
+    LocalDate deadLine = form.getDeadLine();
+    Boolean hasDone = form.getHasDone();
+    Task task = new Task(subject, deadLine, hasDone);
+    todoService.createTask(task);
   }
 }
