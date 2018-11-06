@@ -9,6 +9,7 @@ import com.zakiyama.todo.form.TaskForm;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -124,5 +125,19 @@ public class TodoWebController {
     Boolean hasDone = form.getHasDone();
     Task task = new Task(id, subject, deadLine, hasDone);
     todoService.updateTask(task);
+  }
+
+  @DeleteMapping(value = "/tasks/{id}")
+  public ModelAndView deleteOneTask(
+      @PathVariable Integer id) {
+    deleteTask(id);
+    return new ModelAndView(REDIRECT_TO);
+  }
+
+  private void deleteTask(Integer id) {
+    Optional<Task> task = todoService.findOneTask(id);
+    if (task.isPresent()) {
+      todoService.deleteTask(id);
+    }
   }
 }
