@@ -1,10 +1,11 @@
-import static org.junit.Assume.assumeTrue;
+package com.zakiyama.todo.service;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
 import com.zakiyama.todo.domain.Task;
+import com.zakiyama.todo.repository.TodoRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

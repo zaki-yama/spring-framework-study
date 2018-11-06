@@ -1,3 +1,5 @@
+package com.zakiyama.todo.repository;
+
 import com.zakiyama.todo.domain.Task;
 
 import org.springframework.data.jpa.repository.JpaRepository;
