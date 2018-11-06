@@ -18,6 +18,47 @@
     </div>
     <div class="jumbotron">
       <h1>登録フォーム</h1>
+      <form
+        method="POST"
+        action="./tasks.html"
+        th:if="${form.isNewTask}"
+        th:action="@{/tasks}">
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="input-text-subject">
+              タスク
+            </label>
+            <input class="form-control"
+              required="required"
+              type="text"
+              placeholder="やること"
+              th:field="${form.subject}"
+              id="input-text-subject" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="input-date-deadline">
+              期限
+            </label>
+            <input class="form-control"
+              required="required"
+              type="date"
+              th:field="${form.deadLine}"
+              id="input-date-deadline" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input"
+              type="checkbox"
+              th:field="${form.hasDone}"
+              id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                完了チェック
+              </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">登録</button>
+      </form>
     </div>
   </div>
   
