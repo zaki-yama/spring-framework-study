@@ -4,6 +4,7 @@ import java.net.URI;
 import java.util.List;
 
 import com.zakiyama.qiita.domain.QiitaItem;
+import com.zakiyama.qiita.param.QiitaParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;

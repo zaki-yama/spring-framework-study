@@ -3,6 +3,7 @@ package com.zakiyama.qiita.web;
 import java.util.List;
 
 import com.zakiyama.qiita.domain.QiitaItem;
+import com.zakiyama.qiita.service.QiitaService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
