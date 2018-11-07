@@ -1,4 +1,4 @@
-package com.zakiyama.todo;
+package com.zakiyama.qiita;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

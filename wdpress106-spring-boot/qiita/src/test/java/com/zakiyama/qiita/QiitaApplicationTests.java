@@ -1,4 +1,4 @@
-package com.zakiyama.todo;
+package com.zakiyama.qiita;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
