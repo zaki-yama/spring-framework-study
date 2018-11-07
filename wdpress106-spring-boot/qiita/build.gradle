@@ -30,7 +30,9 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	implementation('javax.xml.bind:jaxb-api')
 	implementation('org.webjars:bootstrap:4.1.0')
+	implementation('org.webjars:masonry:4.2.0')
 	runtimeOnly('com.h2database:h2')
 	compileOnly('org.projectlombok:lombok')
+	compileOnly("org.springframework.boot:spring-boot-configuration-processor")
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
