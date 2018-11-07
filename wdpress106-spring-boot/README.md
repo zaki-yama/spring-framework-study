@@ -63,3 +63,5 @@ Gradle で依存追加
     - `@Component` ( `@Controller / @Service / @Repository` など) の読み取りを行うアノテーション
 - `@Configuration`
     - 設定を許可し、Bean を登録できるようにするアノテーション
+
+`@JsonProperty` は Java のフィールド名と(API のレスポンスにおける) JSON のキー名を変換するために用いる
