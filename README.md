@@ -26,6 +26,8 @@ Spring Framework 関連で学習したことまとめ
 - [ ] [Spring Boot の基礎](https://www.ibm.com/developerworks/jp/java/library/j-spring-boot-basics-perry/index.html)
 - [ ] [【第一回】Spring Frameworkを使ってみる　～Spring Framework概要と準備～ | TECH Projin](https://tech.pjin.jp/blog/2016/04/28/springframework1/)
 - [ ] [初心者のためのSpring Framework入門 - libro](https://www.tuyano.com/index2?id=4466003)
+- [x] [WEB+DB PRESS Vol.106 特集2 ［速習］Spring Boot 簡潔にコードを書けるJavaフレームワーク｜技術評論社](https://gihyo.jp/magazine/wdpress/archive/2018/vol106)
+    - Spring Boot の基本知識と、簡単なアプリの作り方が学べて良い
 
 #### English
 
